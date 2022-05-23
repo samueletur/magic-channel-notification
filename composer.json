@@ -1,0 +1,17 @@
+{
+    "name": "samueletur/magic-channel-notification",
+    "description": "Channel de notificação para integrar com Magic Forms",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Samueletur\\MagicChannelNotification\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel Etur",
+            "email": "samueletur@gmail.com"
+        }
+    ],
+    "require": {}
+}
