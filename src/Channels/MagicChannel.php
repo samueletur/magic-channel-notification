@@ -24,11 +24,20 @@ class MagicChannel
     {
         $data = $notification->toArray($notifiable);
 
-        $data['mm2_codigo'] = $this->config->get('credentials.mm2_codigo');
-
         if (empty($data)) {
             return;
         }
+
+        $data['mm2_codigo'] = $this->config->get('credentials.mm2_codigo');
+
+        if (empty($data['email']))
+            $data['email'] = $this->config->get('from.address');
+
+        if (empty($data['nome']))
+            $data['nome'] = $this->config->get('from.name');
+
+        if (empty($data['mm2_destino']))
+            $data['mm2_destino'] = $this->config->get('mm2_destino');
 
         $url = $this->config->get('urls.default');
 

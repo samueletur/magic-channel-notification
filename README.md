@@ -35,10 +35,7 @@ Configure os parametros de retorno na função `toArray``
         return [
             'template' => base64_encode($this->mailTemplate($notifiable)),
             'template_emails_to' => $notifiable->email,
-            'mm2_destino' => 'principal',
             'mm2_assunto' => 'Novo arquivo compartilhado - Magic Files Exchange',
-            'nome' => 'Dev',
-            'email' => 'dev@incode.com.br'
         ];
     }
 ```

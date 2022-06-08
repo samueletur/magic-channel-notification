@@ -11,4 +11,11 @@ return [
         'mm2_codigo' => env('MM2_CODIGO', '')
     ],
 
+    'from' => [
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
+    ],
+
+    'mm2_destino' => env('MM2_DESTINO', 'principal')
+
 ];
