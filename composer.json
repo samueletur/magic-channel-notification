@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Samueletur\\MagicChannelNotification\\": "src/"
+            "Samueletur\\MagicChannelNotification\\": "src"
         }
     },
     "authors": [
@@ -14,6 +14,13 @@
             "email": "samueletur@gmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Samueletur\\MagicChannelNotification\\Providers\\MagicChannelServiceProvider"
+            ]
+        }
+    },
     "require": {
         "php": ">7.4"
     }
