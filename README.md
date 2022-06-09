@@ -27,7 +27,7 @@ public function via($notifiable)
 }
 ```
 
-Configure os parametros de retorno na função `toArray``
+Configure os parametros de retorno na função `toArray`
 
 ``` php
     public function toArray($notifiable)

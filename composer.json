@@ -2,6 +2,7 @@
     "name": "samueletur/magic-channel-notification",
     "description": "Channel de notificação para integrar com Magic Forms",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Samueletur\\MagicChannelNotification\\": "src/"
@@ -13,5 +14,7 @@
             "email": "samueletur@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">7.4"
+    }
 }
